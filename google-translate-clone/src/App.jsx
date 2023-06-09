@@ -1,8 +1,10 @@
 
 import NavBar from './components/NavBar'
 import TopBar from './components/TopBar'
-import Body from './components/Body'
 import Footer from './components/Footer'
+import Body from './components/Body'
+import { Outlet } from 'react-router-dom'
+import FeedbackLink from './components/FeedbackLink'
 function App() {
 
   return (
@@ -10,9 +12,13 @@ function App() {
       <TopBar />
       <NavBar />
       <Body />
+      <Outlet />
+      <FeedbackLink />
       <Footer />
     </>
   )
 }
 
-export default App
+
+
+export default App;
